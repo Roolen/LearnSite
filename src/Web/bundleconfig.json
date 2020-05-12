@@ -1,0 +1,30 @@
+[
+  {
+    "outputFileName": "wwwroot/dist/vendor.js",
+    "inputFiles": [
+      "node_modules/systemjs/dist/system.src.js",
+      "node_modules/vue/dist/vue.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "wwwroot/dist/app-bundle.min.js",
+    "inputFiles": [
+      "wwwroot/dist/app-bundle.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  },
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/app.component.css"
+    ]
+  }
+]

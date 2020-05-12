@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "name": "sharp-learn",
+  "private": true,
+  "devDependencies": {
+    "vue": "^2.6.11",
+    "systemjs": "^6.3.1",
+    "sass": "^1.26.5"
+  },
+  "scripts": {
+    "build": "sass wwwroot/scss:wwwroot/css/"
+  }
+}

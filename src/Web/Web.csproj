@@ -5,11 +5,21 @@
     <UserSecretsId>513aa750-5b16-40fc-ae45-e8d6ed3600d1</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <DockerfileContext>..\..\..</DockerfileContext>
+    <StartupObject>Web.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\ts\index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.3" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.8.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,9 +33,6 @@
     <Folder Include="Views\Course\" />
     <Folder Include="Views\Lesson\" />
     <Folder Include="Views\Private\" />
-    <Folder Include="wwwroot\css\shared\" />
-    <Folder Include="wwwroot\fonts\" />
-    <Folder Include="wwwroot\images\" />
     <Folder Include="Services\" />
     <Folder Include="Interfaces\" />
     <Folder Include="HealthChecks\" />
